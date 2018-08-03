@@ -21,11 +21,11 @@ map <F3> :!wc <C-R>%<CR>
 map <F6> :setlocal spell! spelllang=en_us<CR>
 map <F7> :setlocal spell! spelllang=cs<CR>
 
-" git plugin
-nmap ]h <Plug>GitGutterNextHunk
-nmap [h <Plug>GitGutterPrevHunk
-
 " plugin manager
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'airblade/vim-gitgutter'
 call plug#end()
+
+" git plugin
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
